@@ -1,6 +1,4 @@
 :root {
-
-  /* color variables */
   --primary-color: #ff6699;
   --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
@@ -13,8 +11,6 @@
   --sun-half-fill:#fcffad;
   --sun-full-fill:#f76414;
   --body-color:#ffffcc;
-
-  /* repatative values */
   --padding:10px;
 }
 
@@ -149,6 +145,7 @@ header{
   background-color: var(--border-color);
   padding:var(--padding);
 }
+
 /* .grid__item:last-child {
 grid-column: auto / auto;
 grid-row: auto / auto;
