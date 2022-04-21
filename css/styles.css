@@ -1,16 +1,16 @@
 :root {
-  --primary-color: #ff6699;
+  --primary-color: #f69;
   --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
   --hyperlink: #c20bec;
   --hyperlink-visited: #fa0695;
   --hyperlink-active: #ff66c0;
-  --button-color: #AE3484;
-  --border-color: #ffccff;
+  --button-color: #ae3484;
+  --border-color: #fcf;
   --sun-zero-fill: #edc655;
   --sun-half-fill: #fcffad;
   --sun-full-fill: #f76414;
-  --body-color: #FFFAF0;
+  --body-color: #fffaf0;
   --padding: 10px;
 }
 
@@ -63,14 +63,17 @@ a:active {
   color: var(--hyperlink-active);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
   cursor: pointer;
   opacity: 0.6;
 }
-.contact_links{
+
+.contact_links {
   font-size: 1rem;
 }
+
 /* button stylings */
 button {
   border: none;
@@ -83,7 +86,8 @@ button {
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   cursor: pointer;
   opacity: 0.6;
 }
@@ -96,7 +100,6 @@ header {
 .page-header {
   display: flex;
   flex-direction: row;
-  /* width: 100%; */
   padding: 20px;
 }
 
@@ -110,27 +113,27 @@ header {
   text-align: right;
 }
 
-.navigation-list, .hobbies-list {
+.navigation-list,
+.hobbies-list {
   list-style-type: none;
 }
 
 .navigation-list li {
   display: inline-block;
-
   margin-left: 30px;
 }
 
 /* Main section */
 .profile {
   max-width: 700px;
-  margin:50px auto;
+  margin: 50px auto;
   clear: both;
-  /* border:1px solid black; */
 }
-.profile_content{
-  padding:30px;
-  /* border:1px solid black; */
+
+.profile_content {
+  padding: 30px;
 }
+
 .profile__portrait {
   float: left;
   width: 300px;
@@ -139,7 +142,7 @@ header {
   border-radius: 50%;
   padding: 20px;
   margin-bottom: 30px;
-  /* border:1px solid black; */
+  border: 1px solid transparent;
 }
 
 .contact-details {
@@ -160,12 +163,10 @@ header {
 
 .hobbies {
   text-align: center;
-  width:750px;
+  width: 750px;
   margin: 0 auto;
 }
-.hobbies-list li{
 
-}
 /* Work Grid layout */
 .grid {
   display: grid;
@@ -182,6 +183,7 @@ header {
 grid-column: auto / auto;
 grid-row: auto / auto;
 } */
+
 /* animation effect */
 @keyframes color-change {
   0% {
@@ -235,21 +237,27 @@ animation-timing-function: linear;
     transform: translate(100px, 48px);
   }
 }
-#about-picture{
-  max-width:750px;
+
+#about-picture {
+  max-width: 750px;
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* transition effect */
-.button, button {
+.button,
+button {
   /* overwrites browser defaults */
+
   /* resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* style button */
   background-color: var(--primary-color);
   color: white;
@@ -257,6 +265,7 @@ animation-timing-function: linear;
   font-size: 1em;
   padding: var(--padding);
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
@@ -268,6 +277,7 @@ button:focus,
 .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
