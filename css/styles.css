@@ -125,9 +125,10 @@ header {
 
 /* Main section */
 .profile {
-  max-width: 700px;
+  max-width: 800px;
   margin: 50px auto;
   clear: both;
+  height: 50vh;
 }
 
 .profile_content {
@@ -136,12 +137,11 @@ header {
 
 .profile__portrait {
   float: left;
-  width: 300px;
-  height: 300px;
-  margin-right: 100px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   padding: 20px;
-  margin-bottom: 30px;
+  margin-right: 50px;
   border: 1px solid transparent;
 }
 
